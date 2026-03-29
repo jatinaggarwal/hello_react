@@ -9,7 +9,16 @@
      */
     
 
-    
+      /**
+     * 
+     * How to create a below srtructure in React
+     * <div id="parent">
+     *   <div id="child">   
+     *       <h1>I am hi tag</h1>
+     *      <h2>I am h2 tag</h2>
+     *   </div>   
+     * </div>
+     */
     
     
     
@@ -25,11 +34,15 @@
         React.createElement(
             "div",
             {id:"child"},
-            React.createElement(
+            [React.createElement(
                 "h1",
                 {},
                 "I am hi tag"
-            )
+            ),React.createElement(
+                "h2",
+                {},
+                "I am h2 tag"
+            )]
         )
     )
 
